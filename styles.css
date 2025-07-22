@@ -312,8 +312,7 @@ nav {
         }
 
    /* ===== ABOUT SECTION ===== */
-   
-.about {
+    .about {
             padding: 80px 0;
             background: linear-gradient(135deg, #1a1a1a 0%, #2d1810 50%, #8b4513 100%);
             min-height: 100vh;
@@ -463,10 +462,62 @@ nav {
             font-weight: bold;
         }
 
-        .org-box p {
-            color: #e0e0e0;
+        /* Different box styles for hierarchy levels */
+        .owner-box {
+            background: linear-gradient(135deg, #8b4513, #a0522d);
+            border-color: #f39c12;
+            font-weight: bold;
+        }
+
+        .director-box {
+            background: linear-gradient(135deg, #7a3e0f, #8b4513);
+            border-color: #f39c12;
+            font-weight: bold;
+        }
+
+        .management-box {
+            background: linear-gradient(135deg, #6d350d, #7a3e0f);
+            border-color: rgba(255, 157, 0, 0.7);
             font-size: 0.9rem;
-            opacity: 0.9;
+        }
+
+        .operational-box {
+            background: linear-gradient(135deg, #5c2c0a, #6d350d);
+            border-color: #f39c12;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .creative-box {
+            background: linear-gradient(135deg, #4a2308, #5c2c0a);
+            border-color: rgba(255, 157, 0, 0.6);
+            font-size: 0.85rem;
+        }
+
+        .management-level {
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .creative-divisions {
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .creative-divisions .branch {
+            flex: 0 1 calc(25% - 1rem);
+            min-width: 200px;
+            margin: 0.5rem;
+        }
+
+        .management-level .branch {
+            flex: 0 1 calc(20% - 1rem);
+            min-width: 180px;
+            margin: 0.5rem;
         }
 
         /* Arrows */
@@ -593,7 +644,8 @@ nav {
             margin-bottom: 0.5rem;
             opacity: 0.9;
             color: #e0e0e0;
-        }a
+        }
+
 
 /* ===== SERVICES SECTION ===== */
 .services {
